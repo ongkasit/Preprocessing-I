@@ -65,6 +65,10 @@ html, body {
 
 @containermargin: 5px 45px 20px 45px;
 
+@tableborder: 1px solid black;
+
+@tablepadding: 10px 10px 10px 10px;
+
 // Mixins
 .flexend {
 	display: flex;
@@ -218,31 +222,45 @@ nav {
 
 	h2 {
 		.h2font();
+		margin-bottom: 20px;
 	}
 
 	table {
-		border: 1px solid black;
+		border: @tableborder;
+		border-collapse: collapse;
 		.pfont();
-			.column1 {
-				width: 100%;
-  				padding-left: 40px;
-			}
-			.column2 {
-				width: 225px;
-				padding-left: 55px;
-			}
-			.column3 {
-				width: 205px;
-			}
-			.column4 {
-				width: 195px;
+			tr {
+				
+				.column1 {
+					border: @tableborder;
+					padding: @tablepadding;
+					width: 35%;
+					
+				}
+				.column2 {
+					border: @tableborder;
+					padding: @tablepadding;
+					width: 35%;
+				}
+				.column3 {
+					border: @tableborder;
+					padding: @tablepadding;
+					width: 35%;
+				}
+				.column4 {
+					border: @tableborder;
+					padding: @tablepadding;
+					width: 35%;
+				}
 			}
 		}
-}
+	}
 
 footer {
 	.flexcenter();
+	margin-bottom: 25px;
 	h2 {
 		.h2font();
+		
 	}
 }

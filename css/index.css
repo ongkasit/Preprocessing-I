@@ -280,29 +280,38 @@ nav a:hover {
 .bottom-content h2 {
   font-family: "Century Gothic", Verdana, Arial, Sans-Serif;
   font-size: 1.8rem;
+  margin-bottom: 20px;
 }
 .bottom-content table {
   border: 1px solid black;
+  border-collapse: collapse;
   font-family: "Century Gothic", Verdana, Arial, Sans-Serif;
   font-size: 1.6rem;
 }
-.bottom-content table .column1 {
-  width: 100%;
-  padding-left: 40px;
+.bottom-content table tr .column1 {
+  border: 1px solid black;
+  padding: 10px 10px 10px 10px;
+  width: 35%;
 }
-.bottom-content table .column2 {
-  width: 225px;
-  padding-left: 55px;
+.bottom-content table tr .column2 {
+  border: 1px solid black;
+  padding: 10px 10px 10px 10px;
+  width: 35%;
 }
-.bottom-content table .column3 {
-  width: 205px;
+.bottom-content table tr .column3 {
+  border: 1px solid black;
+  padding: 10px 10px 10px 10px;
+  width: 35%;
 }
-.bottom-content table .column4 {
-  width: 195px;
+.bottom-content table tr .column4 {
+  border: 1px solid black;
+  padding: 10px 10px 10px 10px;
+  width: 35%;
 }
 footer {
   display: flex;
   justify-content: center;
+  margin-bottom: 25px;
 }
 footer h2 {
   font-family: "Century Gothic", Verdana, Arial, Sans-Serif;
