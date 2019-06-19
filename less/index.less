@@ -55,6 +55,37 @@ table {
 
 html, body {
 	height: 100%;
+	font-size: 100%;
 }
 
+// Variables 
+@maincolor: @darkgray;
 
+@darkgray: #808080;
+
+// Mixins
+.flexstart {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.fontstyle {
+    list-style: none;
+    font-family: "Century Gothic", Verdana, Arial, Sans-Serif;
+    font-size: 1.2rem;
+}
+
+nav {
+	.flexstart();
+	a {
+		text-decoration: none;
+		padding: 10px 10px 10px 10px;
+		color: darkgray;
+		.fontstyle();
+	}
+	a:hover {
+		background: #999;
+		color: #fff;
+	}
+	
+}

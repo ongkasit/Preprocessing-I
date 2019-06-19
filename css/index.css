@@ -133,4 +133,30 @@ table {
 html,
 body {
   height: 100%;
+  font-size: 100%;
+}
+.flexstart {
+  display: flex;
+  justify-content: flex-end;
+}
+.fontstyle {
+  list-style: none;
+  font-family: "Century Gothic", Verdana, Arial, Sans-Serif;
+  font-size: 1.2rem;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+nav a {
+  text-decoration: none;
+  padding: 10px 10px 10px 10px;
+  color: darkgray;
+  list-style: none;
+  font-family: "Century Gothic", Verdana, Arial, Sans-Serif;
+  font-size: 1.2rem;
+}
+nav a:hover {
+  background: #999;
+  color: #fff;
 }
