@@ -158,7 +158,6 @@ nav {
 
 	.background {
 		.h2font();
-		// border: 5px red solid;
 		p {
 			.pfont();
 		}
@@ -166,9 +165,33 @@ nav {
 
 	.skills {
 		.h2font();
+		width: 200px;
 		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
 			li {
-				// border: 5px solid red; 
+				font: 200 20px/1.5 Helvetica, Verdana, Sans-serif;
+				border-bottom: 1px solid #ccc;
+			}
+			li:last-child {
+				border:none;
+			}
+			li a {
+				text-decoration: none;
+				color: #000;
+				display: block;
+				width: 200px;
+
+				-webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+				-moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+				-o-transition: font-size 0.3s ease, background-color 0.3s ease;
+				-ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+				transition: font-size 0.3s ease, background-color 0.3s ease;
+			}
+			li a:hover {
+				font-size: 3rem;
+				background: #f6f6f6;
 			}
 		}
 	}
@@ -182,9 +205,23 @@ nav {
 	}
 
 	table {
+		border: 1px solid black;
 		.pfont();
-		
-	}
+			.column1 {
+				width: 100%;
+  				padding-left: 40px;
+			}
+			.column2 {
+				width: 225px;
+				padding-left: 55px;
+			}
+			.column3 {
+				width: 205px;
+			}
+			.column4 {
+				width: 195px;
+			}
+		}
 }
 
 footer {

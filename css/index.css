@@ -230,6 +230,34 @@ nav a:hover {
 .mid-content .skills {
   font-family: "Century Gothic", Verdana, Arial, Sans-Serif;
   font-size: 1.8rem;
+  width: 200px;
+}
+.mid-content .skills ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.mid-content .skills ul li {
+  font: 200 20px/1.5 Helvetica, Verdana, Sans-serif;
+  border-bottom: 1px solid #ccc;
+}
+.mid-content .skills ul li:last-child {
+  border: none;
+}
+.mid-content .skills ul li a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  width: 200px;
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+.mid-content .skills ul li a:hover {
+  font-size: 3rem;
+  background: #f6f6f6;
 }
 .bottom-content {
   margin: 5px 45px 20px 45px;
@@ -239,8 +267,23 @@ nav a:hover {
   font-size: 1.8rem;
 }
 .bottom-content table {
+  border: 1px solid black;
   font-family: "Century Gothic", Verdana, Arial, Sans-Serif;
   font-size: 1.6rem;
+}
+.bottom-content table .column1 {
+  width: 100%;
+  padding-left: 40px;
+}
+.bottom-content table .column2 {
+  width: 225px;
+  padding-left: 55px;
+}
+.bottom-content table .column3 {
+  width: 205px;
+}
+.bottom-content table .column4 {
+  width: 195px;
 }
 footer {
   display: flex;
