@@ -1,1 +1,354 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+.flexend {
+  display: flex;
+  justify-content: flex-end;
+}
+.flexcenter {
+  display: flex;
+  justify-content: center;
+}
+.headerfont {
+  list-style: none;
+  font-family: "Century Gothic", Verdana, Arial, Sans-Serif;
+  font-size: 2.2rem;
+}
+.h2font {
+  font-family: "Century Gothic", Verdana, Arial, Sans-Serif;
+  font-size: 1.8rem;
+}
+.pfont {
+  font-family: "Century Gothic", Verdana, Arial, Sans-Serif;
+  font-size: 1.6rem;
+}
+.container {
+  width: 100%;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 35px;
+}
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 20px;
+  }
+}
+nav a {
+  text-decoration: none;
+  padding: 10px 10px 10px 10px;
+  color: darkgray;
+  list-style: none;
+  font-family: "Century Gothic", Verdana, Arial, Sans-Serif;
+  font-size: 2.2rem;
+}
+nav a:hover {
+  background: #999;
+  color: #fff;
+}
+.top-content {
+  margin: 5px 45px 20px 45px;
+  background-color: #D3D3D3;
+}
+.top-content .mini-container {
+  width: 95%;
+  margin: 0 30px 30px 30px;
+}
+.top-content .mini-container img {
+  width: 25%;
+  margin-top: 30px;
+}
+@media (max-width: 500px) {
+  .top-content .mini-container img {
+    width: 90%;
+  }
+}
+.top-content .mini-container h1 {
+  list-style: none;
+  font-family: "Century Gothic", Verdana, Arial, Sans-Serif;
+  font-size: 2.2rem;
+  margin: 20px 0;
+}
+.top-content .mini-container h3 {
+  font-family: "Century Gothic", Verdana, Arial, Sans-Serif;
+  font-size: 1.6rem;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+.top-content .mini-container p {
+  font-family: "Century Gothic", Verdana, Arial, Sans-Serif;
+  font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .top-content .mini-container p {
+    width: 90%;
+  }
+}
+.top-content .mini-container button {
+  color: #494949;
+  text-transform: uppercase;
+  background: #ffffff;
+  padding: 10px;
+  border: 4px solid #494949;
+  border-radius: 6px;
+  display: inline-block;
+  margin: 20px 0;
+}
+.top-content .mini-container button:hover {
+  color: #ffffff;
+  background: #f6b93b;
+  border-color: #f6b93b;
+  transition: all 0.4s ease 0s;
+}
+.mid-content {
+  margin: 5px 45px 20px 45px;
+  display: flex;
+}
+@media (max-width: 500px) {
+  .mid-content {
+    flex-flow: column wrap;
+  }
+}
+.mid-content .background {
+  font-family: "Century Gothic", Verdana, Arial, Sans-Serif;
+  font-size: 1.8rem;
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .mid-content .background {
+    width: 100%;
+  }
+}
+.mid-content .background h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+.mid-content .background p {
+  font-family: "Century Gothic", Verdana, Arial, Sans-Serif;
+  font-size: 1.6rem;
+}
+.mid-content .skills {
+  font-family: "Century Gothic", Verdana, Arial, Sans-Serif;
+  font-size: 1.8rem;
+  width: 50%;
+  margin-left: 25px;
+}
+@media (max-width: 500px) {
+  .mid-content .skills {
+    margin-top: 20px;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+.mid-content .skills h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+.mid-content .skills ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.mid-content .skills ul li {
+  font: 200 20px/1.5 Helvetica, Verdana, Sans-serif;
+  border-bottom: 1px solid #ccc;
+}
+.mid-content .skills ul li:last-child {
+  border: none;
+}
+.mid-content .skills ul li a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  width: 200px;
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+.mid-content .skills ul li a:hover {
+  font-size: 3rem;
+  background: #f6f6f6;
+}
+.bottom-content {
+  margin: 5px 45px 20px 45px;
+}
+.bottom-content h2 {
+  font-family: "Century Gothic", Verdana, Arial, Sans-Serif;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+.bottom-content table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-family: "Century Gothic", Verdana, Arial, Sans-Serif;
+  font-size: 1.6rem;
+}
+.bottom-content table tr .column1 {
+  border: 1px solid black;
+  padding: 10px 10px 10px 10px;
+  width: 35%;
+}
+.bottom-content table tr .column2 {
+  border: 1px solid black;
+  padding: 10px 10px 10px 10px;
+  width: 35%;
+}
+.bottom-content table tr .column3 {
+  border: 1px solid black;
+  padding: 10px 10px 10px 10px;
+  width: 35%;
+}
+.bottom-content table tr .column4 {
+  border: 1px solid black;
+  padding: 10px 10px 10px 10px;
+  width: 35%;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+footer h2 {
+  font-family: "Century Gothic", Verdana, Arial, Sans-Serif;
+  font-size: 1.8rem;
+}
